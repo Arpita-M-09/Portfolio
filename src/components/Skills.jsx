@@ -87,7 +87,7 @@ const Skills = () => {
     { skill: 'Tailwind CSS', level: 88, color: 'bg-teal-500' },
     { skill: 'Git & GitHub', level: 85, color: 'bg-gray-800' },
     { skill: 'Webpack/Vite', level: 75, color: 'bg-purple-600' },
-    { skill: 'Figma', level: 70, color: 'bg-pink-500' },
+    { skill: 'Java', level: 70, color: 'bg-pink-500' },
   ];
 
   return (

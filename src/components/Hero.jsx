@@ -1,5 +1,6 @@
 // components/Hero.jsx
 import { useEffect, useRef } from 'react';
+import me1 from '../assets/me1.jpg';
 
 const Hero = () => {
   const titleRef = useRef(null);
@@ -67,11 +68,18 @@ const Hero = () => {
           <div className="w-full h-64 md:h-96 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl overflow-hidden relative">
             <div className="absolute inset-0 flex items-center justify-center text-indigo-500 dark:text-indigo-400">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                
               </svg>
             </div>
             {/* Replace with your actual photo */}
-            {/* <img src="your-photo.jpg" alt="Developer" className="w-full h-full object-cover" /> */}
+            <img
+  src={me1}
+  alt="Developer"
+  style={{ width: '750px', height: '630px' }}
+  className="object-cover"
+/>
+
+
           </div>
           
           {/* Social links */}

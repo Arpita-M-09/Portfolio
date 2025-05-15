@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-
+import me2 from '../assets/me2.jpg';
 const About = () => {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
@@ -48,11 +48,18 @@ const About = () => {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/3">
               <div className="bg-indigo-100 dark:bg-indigo-900/30 h-60 rounded-lg flex items-center justify-center mb-4">
-                {/* Replace with your image */}
+                <br/><br/>
+                  <img
+                    src={me2}
+                    alt="Developer"
+                    style={{ width: '6700px', height: '300px' }}
+                    className="object-cover"
+                  />
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 text-indigo-500 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                 
                 </svg>
               </div>
+              <br/>
               <div className="text-center">
                 <h3 className="font-bold text-lg text-gray-800 dark:text-white">Arpita M</h3>
                 <p className="text-indigo-600 dark:text-indigo-400">FullStack Developer</p>
@@ -61,7 +68,7 @@ const About = () => {
             
             <div className="md:w-2/3">
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                I'm a passionate Frontend Developer with a strong foundation in React, TypeScript, and modern CSS frameworks.
+                I'm a passionate Frontend Developer with a strong foundation in React,Javascript, and modern CSS frameworks.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
                 I specialize in building responsive, accessible, and performant web applications with clean and maintainable code. I'm always exploring new technologies and methodologies to enhance my skillset and deliver better solutions.
